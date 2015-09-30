@@ -3,9 +3,9 @@ function dArgs = Cub(t,args)
     Trust   = [0; 0; 2.4525];
     mass = 0.5;
     
-    A = Gravity;                  % ускорение свободного падения
-    V = Trust/mass - (A*mass);    % скорость
-    H = V;                        % высота
+    A = Gravity;                  % ГіГ±ГЄГ®Г°ГҐГ­ГЁГҐ Г±ГўГ®ГЎГ®Г¤Г­Г®ГЈГ® ГЇГ Г¤ГҐГ­ГЁГї
+    V = Trust/mass - A;           % Г±ГЄГ®Г°Г®Г±ГІГј
+    H = V;                        % ГўГ»Г±Г®ГІГ 
     
     dArgs = [H; V];
 end
